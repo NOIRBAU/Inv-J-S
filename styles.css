@@ -1,0 +1,606 @@
+/*GENÉRICOS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Crimson Text', serif;
+    font-weight: bold;
+}
+body {
+    min-height: 100vh;
+    background-color: rgb(245, 236, 245);
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+ul {
+    list-style: none;
+    font-size: x-large;
+}
+h1 {
+    font-size: 60px;
+    font-weight: bolder;
+    font-family: 'Tangerine', serif;
+    color: #371F76;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+h4{
+    width: 100%;
+    font-size: 26px;
+    font-weight: bold;
+    background-color: #f6e4ff;
+    color: rgb(94,85,94);
+    }
+h5{
+    width: 100%;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: #f6e4ff;
+    color: #371F76;
+}
+h6{
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    color:#171717;
+    background-color: #f6e4ff;
+}
+.h7{
+    font-size: 22px;
+    text-align: center;
+    color: whitesmoke;
+    background-color: #371F76;
+    margin-bottom: 10px;
+}
+
+/* NAVEGACIÓN */
+header {
+    position: fixed;
+    display: fixed;
+    z-index: 10;
+    width: 100%;
+}
+header::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(30px);
+    z-index: -1;
+}
+.navbar {
+    width: 100vw;
+    height: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo img {
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin-right: 15px;
+}
+.icono__menu {
+    display: none;
+}
+
+/* MENU LATERAL*/
+.menu__lateral {
+    display: none;
+    position: absolute;
+    height: 0px;
+    top: 80px;
+    right: 0rem;
+    width: 70%;
+    background: rgba(0, 0, 0, .1);  
+    backdrop-filter: blur(30px);
+    border-radius: 0 0 20px 20px;
+    overflow: hidden;
+}
+.menu__lateral.abierto{
+    height: 200px;
+}
+.menu__lateral ul {
+    padding: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    list-style: none;
+}
+.menu__lateral li {
+    margin: 5px 0;
+}
+.menu__lateral ul a {
+    color: white;
+    font-weight: bolder;
+}
+.icono {
+    width: 70%;
+}
+
+/* PORTADA */
+.portada {
+    max-width: 100%;
+    height: 100vh;
+    background-color: #f6e4ff;
+}
+.portada__fondo {
+    max-width: 1200px;
+    height: 100%;
+    background-image: url(./assets/portada.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    position: relative;
+}
+.portada__fondo-contador {
+    width: 350px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+.portada__fondo-contador img {
+    width: 300px;
+}
+.portada__fondo-contador .texto1 {
+    font-size: 22px;
+    text-align: center;
+    color: rgb(94,85,94);
+    background-color: #f6e4ff;
+    margin: 10px 0;
+}
+.portada__fondo-contador .texto2 {
+    font-size: 22px;
+    text-align: center;
+    color: whitesmoke;
+    background-color: #371F76;
+    margin-bottom: 10px;
+}
+
+audio {
+    margin: 0 auto;
+}
+
+/* SECCION1: FECHA */
+ .seccion1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./assets/marcoFlores.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ceabce;
+}
+.seccion1__foto {
+    width: 250px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 10px 3px #371F76;
+} 
+.seccion1__foto:hover {
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+}
+.texto3 {
+    font-size: 40px;
+    font-weight: normal;
+    color: rgb(94,85,94);
+}
+.texto4{
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Tangerine', serif;
+    color: #371F76;
+}
+.texto5 {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(94,85,94);
+}
+.seccion1 button {
+    background-color: rgb(162, 171, 108);
+    margin-top: 15px;
+    border-radius: 10px;
+    font-size: x-large;
+    color: #171717;
+    border-color: rgb(162, 171, 108);
+    padding: 2px 5px;
+}
+
+/* SECCION2: LUGAR Y FECHA */
+.seccion2 {
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/fondoFlores.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.seccion2__contenedores {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.seccion2--izquierda {
+    width: 28rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.seccion2--derecha {
+    width: 28rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedor__imagen-seccion2{
+    width: 370px;
+    height: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.seccion2 img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    filter: grayscale(1);
+    transition: 0.5s;
+    object-fit: cover;
+}
+.seccion2 img:hover {
+    transform: scale(1.2);
+    border-radius: 15px;
+    filter: grayscale(0);
+}
+.boton__2 {
+    width: 140px;
+    background-color: rgb(162, 171, 108);
+    margin-top: 15px;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: bold;
+    border-color: rgb(162, 171, 108);
+    padding: 2px 5px;
+}
+.text--black {
+    color: #171717;
+}
+
+/* SECCION3: ETIQUETA Y REGALOS */
+.seccion3 {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ceabce;
+}
+.seccion3__contenedor {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.seccion3--izquierda {
+    width: 45%;
+    text-align: center;
+    background-image: url(./assets/fondoClaro.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+}
+.seccion3--izquierda img {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    object-fit: cover;
+}
+.seccion3--izquierda img:hover {
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px #ceabce;
+    -webkit-box-shadow: 0px 0px 15px 15px #ceabce;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+.seccion3--izquierda h4 {
+    font-size: 20px;
+}
+.seccion3--derecha{
+    width: 45%;
+    text-align: center;
+    background-image: url(./assets/fondoClaro.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 5%;
+}
+.seccion3--derecha h4 {
+    font-size: 20px;
+}
+.seccion3--derecha img {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+}
+.seccion3--derecha img:hover {
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px #ceabce;
+    -webkit-box-shadow: 0px 0px 15px 15px #ceabce;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+/* SECCION4: CONFIRMACIÓN DE ASISTENCIA */
+.seccion4 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./assets/fondoFlores.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.seccion4__padres {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.seccion4__padres h4 {
+    font-size: 24px;
+    text-align: center;
+}
+.seccion4__padres h5 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+.padres {
+    width: 100%;
+    text-align: center;
+}
+.whats {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 auto;
+    text-align: center;
+}
+.boton__whats {
+    width: 180px;
+    color: #171717;
+}
+
+button a {
+    color: #171717;
+}
+
+/* SECCION5: AGRADECIMIENTOS */
+.seccion5 {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(124, 98, 159);
+    background-image: url(./assets/fondoFLoresM.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+    text-align: center;
+}
+.cont__secc5 {
+    max-width: 1200px;
+}
+.seccion5 h1 {
+    color: #f6e4ff;
+    background-color: #371F76;
+}
+.seccion5 h1:hover {
+    color:#371F76;
+    background-color: #f6e4ff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BREAK POINTS */
+
+@media only screen and (max-width: 768px) {
+    /* NAVBAR */
+    .navbar ul {
+        display: none;
+    }
+    .navbar .icono__menu {
+        display: block;
+        margin-right: 10px;
+    }
+    .menu__lateral {
+        display: block;
+        z-index: 999;
+    }
+    
+    /* PORTADA */
+    .portada__fondo {
+        background-position: 32%;
+    }
+    .portada__fondo-contador {
+        width: 280px;
+        bottom: 10px;
+    }
+    .portada__fondo-contador img {
+        display: none;
+    }
+    .portada__fondo-contador .texto1 {
+        font-size: 20px;
+    }
+    .portada__fondo-contador .texto2 {
+        font-size: 20px;
+    }
+    audio {
+        width: 200px;
+        height: 30px;    
+    }
+
+    /* SECCIÓN 1*/
+    .seccion1 {
+        background-size: 200%;
+        background-position: center;
+    }
+    .seccion1__foto {
+        width: 200px;
+    }
+    .texto3 {
+        font-size: 34px;
+        font-weight: bold;
+    }  
+    .texto4 {
+        font-size: 38px;
+        font-weight: bolder;
+    }      
+    .texto5 {
+        font-size: 30px;
+        font-weight: bolder;
+        color: rgb(94, 85, 94);
+    }     
+
+    /* SECCION 2*/
+    .contenedor__imagen-seccion2{
+        width: 260px;
+        height: auto;
+        padding: 0;
+        line-height: .7;
+    }
+    .seccion2__contenedores {
+        max-width: 280px;
+        gap: 10px;
+    }
+    .seccion2 img {
+        width: 250px;
+        height: 140px;
+        margin-bottom: 0;
+    } 
+    h1 {
+        font-size: 40px;
+        font-weight: bold;
+        margin: 5px 0;
+    }
+    h4 {
+        font-size: 24px;
+    }
+    .boton__2 {
+        margin-top: 0px;
+    }
+    /* SECCIÓN 3*/
+    .seccion3__contenedor {
+        flex-direction: column;
+        line-height: 1;
+        gap: 10px;
+    }
+    .seccion3--izquierda {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .seccion3--derecha {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .seccion3--izquierda img {
+        width: 230px;
+        height: 120px;
+        margin: 0;
+    }
+    .seccion3--derecha img {
+        width: 230px;
+        height: 120px;
+        margin: 0;
+    }
+    .seccion3__contenedor h4{
+        font-size: 20px;
+    }
+
+    /* SECCION 4 */
+    .seccion4 {
+    line-height: 1;
+    }
+    .seccion4 h1 {
+        text-align: center;
+    }
+    .seccion4 img {
+        width: 50px;
+    }
+
+    /*SECCION 5*/
+    .seccion5 h1 {
+        margin-top: 50px;
+    }
+}
+
+
+

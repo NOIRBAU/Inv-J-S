@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jessie&Sebastián</title>
+    <link rel="icon" type="image/jpg" href="/favicon.jpg"/>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="breakpoints.css">
+    <link rel="stylesheet" href="animaciones.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&Tangerine:wght@700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/png" href="./assets/favicon.png"/>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#home"><img src="./assets/J&S.png" alt="logo"></a>
+            </div>            
+            <ul>
+                <li><a href="#calendario">CUÁNDO</a></li>
+                <li><a href="#donde">DÓNDE</a></li>
+                <li><a href="#indicaciones">INDICACIONES</a></li>
+                <li><a href="#asistencia">ASISTENCIA</a></li>
+            </ul>
+            <div class="icono__menu">
+                <a href="#"><img src="assets/barraMenu.png" alt="menu" class="icono"></a>
+            </div>
+        </nav>
+        <div class="menu__lateral">
+            <ul>
+                <li><a href="#calendario">CUÁNDO</a></li>
+                <li><a href="#donde">DÓNDE</a></li>
+                <li><a href="#indicaciones">INDICACIONES</a></li>
+                <li><a href="#asistencia">ASISTENCIA</a></li>
+            </ul>
+        </div>    
+    </header>
+
+    <div class="portada" id="home">
+        <div class="portada__fondo">
+            <div class="portada__fondo-contador">
+                <img src="./assets/J&S.png" alt="jessie&sebas">
+                <p class="texto1">Nos complace invitarlos a celebrar nuestra boda.</p>
+                <p class="texto2">F A L T A N</p>
+                <div id="micontador" data-final="2023/11/04">
+                    <div class="num">
+                       <div class="dig"><span>&nbsp;</span></div>
+                       <div class="label">DIAS</div>
+                    </div>
+                    <div class="num">
+                       <div class="dig"><span>&nbsp;</span></div>
+                       <div class="label">HRS</div>
+                    </div> 
+                    <div class="num">
+                       <div class="dig"><span>&nbsp;</span></div>
+                       <div class="label">MIN</div>
+                    </div>
+                    <div class="num">
+                       <div class="dig"><span>&nbsp;</span></div>
+                       <div class="label">SEG</div>
+                    </div>
+                 </div>
+                 <audio autoplay controls>
+                    <source src="./assets/song.mp3" type="audio/mp3">
+                 </audio> 
+            </div>
+        </div>
+    </div> 
+
+    <div class="seccion1" id="calendario">
+        <img class="seccion1__foto" src="./assets/compromiso.jpg">
+        <p class="texto3">Sábado</p>
+        <p class="texto4">4 de Noviembre de 2023</p>
+        <P class="texto5">A las 11hrs</P>
+        <button>
+            <a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=MXIxaG80ZjMwNGsxamdyM3ZwMW5zbjRoNHAgbmVsbHkuYWxlLmJnQG0&amp;tmsrc=nelly.ale.bg%40gmail.com">
+                <img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_es-419.gif">
+            </a>
+        </button>
+    </div>
+
+    <div class="seccion2" id="donde">
+        <h1>¿Dónde y Cuándo?</h1>
+        <div class="seccion2__contenedores">
+            <div class="seccion2--izquierda">
+                <div class="contenedor__imagen-seccion2">
+                    <img src="./assets/iglesia.jpg" alt="iglesia">
+                </div>
+                <h4>Iglesia San Felipe Apóstol</h4>
+                <h5>Cra. 7 #7b15, Funza, Cundinamarca.</h5>
+                <h6>A las 12:00hrs.</h6>
+                <button class="boton__2">
+                    <a class="text--black" href="https://goo.gl/maps/ovx6X8A9UP7AUXN48" target="_blank">UBICACIÓN</a>
+                </button>
+            </div>
+            <div class="seccion2--derecha">
+                <div class="contenedor__imagen-seccion2">
+                    <img src="./assets/finca.jpg" alt="finca">
+                </div>
+                <h4>Finca Antillana - El Coral</h4>
+                <h5>Cl. 15 #25-51, Funza, Cundinamarca.</h5>
+                <h6>A las 14:00hrs.</h6>
+                <button class="boton__2">
+                    <a class="text--black" href="https://goo.gl/maps/BGEyLgvMEF9n51Jo7" target="_blank">UBICACIÓN</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="seccion3" id="indicaciones">
+        <div class="seccion3__contenedor">
+            <div class="seccion3--izquierda">
+                <img src="./assets/brideGroom.webp" alt="fotoNovios">
+                <h1>Indicaciones para el evento</h1>
+                <h5>Código de Vestimenta</h5>
+                <h4>Los colores blanco y lila se reservan para los novios.</h4>
+                <h4>Vestimenta formal.</h4>
+            </div>
+            <div class="seccion3--derecha">
+                <h1>Regalo de Bodas</h1>
+                <h4>Su presencia en nuestra boda será el mejor regalo. Pero si desean darnos otro obsequio, les agradeceremos cualquier apoyo en efectivo que nos quieran brindar.</h4>
+                <img src="./assets/envelope.jpg" alt="fotoSobre">
+            </div> 
+        </div>    
+    </div>
+
+    <div class="seccion4" id="asistencia">
+        <h1>Con la bendición de Dios y de nuestros padres:</h1>
+        <div class="seccion4__padres">
+            <div class="padres">
+                <img src="./assets/bride.png" alt="novia">
+                <h4>Guadalupe Margarita González Servín</h4>
+                <h4>Cesáreo Isaías Bautista González ✞</h4>
+                <h5>Gracias a mi papá que desde el cielo nos acompaña.</h5>
+            </div>
+            <div class="padres">
+                <img src="./assets/groom.png" alt="novio">
+                <h4>Martha Rocío Ayala Ramírez</h4>
+                <h4>Rubén Darío Herrera Ruiz</h4>
+            </div>
+        </div>
+        <div class="whats">
+            <p class="h7">Te agradecemos que confirmes tu asistencia lo más pronto posible.</p>
+            <p style="font-size: 24px; color=#171717;">Para hacerlo da click en el siguiente enlace.</p>
+            <button class="boton__2">
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=+522228148031&text=Hola%20buen%20d%C3%ADa,%20confirmo%20mi%20asistencia%20a%20la%20boda%20de%20Jessie%20&%20Sebasti%C3%A1n,%20mi%20nombre%20es:%20%20%20%20%20y%20seremos:%20%20%20%20(n%C3%BAm)%20personas.">CONFIRMA TU ASISTECIA</a>
+            </button>
+        </div>
+    </div>
+
+    <div class="seccion5">
+        <div class="cont__secc5">
+            <article class="contenedor__carrusel">
+                <div class="carrusel" id="carrusel-slider">
+                    <section class="slider__section">
+                        <img src="assets/1.jpg" alt="novios">
+                    </section>
+                    <section class="slider__section">
+                        <img src="assets/2.jpg" alt="novios">
+                    </section>
+                    <section class="slider__section">
+                        <img src="assets/3.jpg" alt="novios">
+                    </section>
+                    <section class="slider__section">
+                        <img src="assets/4.jpg" alt="novios">
+                    </section>
+                    <section class="slider__section">
+                        <img src="assets/5.jpg" alt="novios">
+                    </section>
+                    <section class="slider__section">
+                        <img src="assets/6.png" alt="novios">
+                    </section>
+                </div>
+                <div class="btn--izquierdo">
+                    <span class="fa-solid fa-less-than"></span>
+                </div>
+                <div class="btn--derecho">
+                    <span class="fa-solid fa-greater-than"></span>
+                </div>
+            </article>
+            <h1>¡Gracias por acompañarnos!</h1>
+        </div>
+    </div>
+
+    <div class="goTop__container">
+        <div class="goTop__button">
+            <img src="assets/chevron-up-solid.svg" alt="flechaBoton">
+        </div>
+    </div>
+
+    <script>
+        const iconoMenu = document.querySelector('.icono__menu')
+        const iconoMenuB = document.querySelector('.icono__menu i')
+        const menuLateral = document.querySelector('.menu__lateral')
+        
+        iconoMenu.onclick = function () {
+            menuLateral.classList.toggle('abierto')
+            const isOpen = menuLateral.classList.contains('abierto')
+        }
+    </script>
+
+    <script src="contador.js"></script> 
+    <script src="carrusel.js"></script>
+    <script src="scroll.js"></script>
+    <script src="https://kit.fontawesome.com/caec77cea8.js" crossorigin="anonymous"></script> 
+</body>
+</html>
