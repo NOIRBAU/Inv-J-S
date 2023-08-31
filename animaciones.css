@@ -40,7 +40,7 @@
     position: relative;
 }
 .carrusel {
-    width: 600%;
+    width: 1800%;
     height: 100%;
     display: flex;
 }
@@ -48,7 +48,7 @@
     max-width: 1200px;
 }
 .slider__section {
-    width: calc(100% / 6);
+    width: calc(100% / 18);
     height: 100%;
 }
 .slider__section img {

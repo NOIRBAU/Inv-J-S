@@ -178,6 +178,8 @@ header::before {
 
 audio {
     margin: 0 auto;
+    margin-top: 10px;
+    height: 35px;
 }
 
 /* SECCION1: FECHA */
@@ -480,6 +482,7 @@ button a {
     .navbar .icono__menu {
         display: block;
         margin-right: 10px;
+        font-size: 30px;
     }
     .menu__lateral {
         display: block;
@@ -488,11 +491,17 @@ button a {
     
     /* PORTADA */
     .portada__fondo {
-        background-position: 32%;
+        width: 100%;
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        margin: 0 auto;
+        background-image: url(./assets/portada1.jpg);
     }
     .portada__fondo-contador {
-        width: 280px;
-        bottom: 10px;
+        position: static;
+        width: 230px;
     }
     .portada__fondo-contador img {
         display: none;
@@ -505,7 +514,8 @@ button a {
     }
     audio {
         width: 200px;
-        height: 30px;    
+        height: 30px;
+        margin-bottom: 15px;    
     }
 
     /* SECCIÓN 1*/

@@ -28,7 +28,7 @@
                 <li><a href="#asistencia">ASISTENCIA</a></li>
             </ul>
             <div class="icono__menu">
-                <a href="#"><img src="assets/barraMenu.png" alt="menu" class="icono"></a>
+                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
             </div>
         </nav>
         <div class="menu__lateral">
@@ -66,7 +66,7 @@
                     </div>
                  </div>
                  <audio autoplay controls>
-                    <source src="./assets/song.mp3" type="audio/mp3" autoplay>
+                    <source src="./assets/song.mp3" type="audio/mp3">
                  </audio> 
             </div>
         </div>
@@ -161,6 +161,9 @@
                         <img src="assets/1.jpg" alt="novios">
                     </section>
                     <section class="slider__section">
+                        <img src="assets/1a.jpeg" alt="novios">
+                    </section>
+                    <section class="slider__section">
                         <img src="assets/2.jpg" alt="novios">
                     </section>
                     <section class="slider__section">
@@ -170,10 +173,43 @@
                         <img src="assets/4.jpg" alt="novios">
                     </section>
                     <section class="slider__section">
+                        <img src="assets/4a.jpg" alt="novios">
+                    </section>
+                    <section class="slider__section">
+                        <img src="assets/4b.jpg" alt="novios">
+                    </section>
+                    <section class="slider__section">
                         <img src="assets/5.jpg" alt="novios">
                     </section>
                     <section class="slider__section">
-                        <img src="assets/6.png" alt="novios">
+                        <img src="assets/6.jpg" alt="novios">
+                    </section>
+                    <section class="slider__section">
+                        <img src="assets/7.jpg" alt="novios">
+                    </section>
+                    <section class="slider__section">
+                        <img src="assets/7a.jpg" alt="novios">
+                    </section>
+                    <section class="slider__section">
+                        <img src="assets/8.jpg" alt="novios">
+                    </section>
+                    <section class="slider__section">
+                        <img src="assets/9.jpeg" alt="novios">
+                    </section>
+                    <section class="slider__section">
+                        <img src="assets/10.jpg" alt="novios">
+                    </section>
+                    <section class="slider__section">
+                        <img src="assets/11.jpg" alt="novios">
+                    </section>
+                    <section class="slider__section">
+                        <img src="assets/12.jpg" alt="novios">
+                    </section>
+                    <section class="slider__section">
+                        <img src="assets/13.jpeg" alt="novios">
+                    </section>
+                    <section class="slider__section">
+                        <img src="assets/12.png" alt="novios">
                     </section>
                 </div>
                 <div class="btn--izquierdo">
@@ -201,7 +237,12 @@
         iconoMenu.onclick = function () {
             menuLateral.classList.toggle('abierto')
             const isOpen = menuLateral.classList.contains('abierto')
+        
+            iconoMenuB.classList = isOpen
+             ? 'fa-solid fa-xmark'
+             : 'fa-solid fa-bars'
         }
+
     </script>
 
     <script src="contador.js"></script> 
