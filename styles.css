@@ -492,6 +492,7 @@ button a {
     /* PORTADA */
     .portada__fondo {
         width: 100%;
+        height: 100vh;
         position: static;
         display: flex;
         justify-content: center;
