@@ -1,3 +1,14 @@
+:root {
+    --light-color1: rgb(244, 234, 244);
+    --color1: #ceabce;
+    --color1a: rgb(124, 98, 159);
+    --color2: rgb(162, 171, 108);
+    --color3: rgb(94,85,94);
+    --dark-color: #371F76;
+    --black: #1c1c1c;
+    --white-color: #fbfcfc;
+}
+
 /* CONTADOR */
 #micontador{
     display: flex;
@@ -9,7 +20,7 @@
 #micontador .num{
     display: flex;
     flex-direction:column;
-    border: 2px solid #371F76;
+    border: 2px solid var(--color1a);
     margin: 0 8px;
 }
 #micontador .num .dig{
@@ -24,7 +35,7 @@
 }
 #micontador .label{
     text-align: center;
-    border-top: 2px solid #371F76;;
+    border-top: 2px solid var(--color1a);
 }
 
 /* CARRUSEL */
@@ -141,10 +152,12 @@
 @media only screen and (max-width: 768px) {
     /* RELOJ */
     #micontador .num{
-        background-color: #ceabce;
+        background-color: rgba(244, 234, 244, .4);
+        color: var(--black);
     }
     #micontador .num .dig span{
         font-size: 20px;
+        padding: 3px;
     }
     #micontador .num .dig{
         padding: 5px;
@@ -152,12 +165,12 @@
 
     /*CARRUSEL*/
     .contenedor__carrusel {
-        max-width: 250px;
+        max-width: 280px;
         max-height: 200px;
         margin: 0 auto;
     }
     .slider__section img {
-        max-width: 250px;
+        max-width: 280px;
     }
     .btn--izquierdo, .btn--derecho {
         top: 70%;
@@ -174,8 +187,8 @@
     .goTop__container {
         width: 4rem;
         height: 4rem;
-        right: 7rem;
-        bottom: ;
+        right: 1rem;
+        bottom: 1rem;
     }
     .goTop__button {
         transform: translate(0%, 0%);
@@ -184,4 +197,27 @@
         width: 60px;
         height: 60px;
     }
+}
+
+
+/* ANIMACIONES */
+
+.animate__rotateIn {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-range: entry 25% cover 50%;
+    animation-iteration-count: 2;
+}
+.animate__backInRight {
+    view-timeline-name: --font;
+    view-timeline-axis: block;
+    animation-timeline: --font;
+    animation-range: entry 25% cover 50%;
+}
+.animate__backInLeft{
+    view-timeline-name: --font;
+    view-timeline-axis: block;
+    animation-timeline: --font;
+    animation-range: entry 25% cover 50%;
 }

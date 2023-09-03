@@ -1,3 +1,13 @@
+:root {
+    --light-color1: rgb(244, 234, 244);
+    --color1: #ceabce;
+    --color1a: rgb(124, 98, 159);
+    --color2: rgb(162, 171, 108);
+    --color3: rgb(94,85,94);
+    --dark-color: #371F76;
+    --black: #1c1c1c;
+    --white-color: #fbfcfc;
+}
 /*GENÉRICOS*/
 *{
     margin: 0;
@@ -8,11 +18,11 @@
 }
 body {
     min-height: 100vh;
-    background-color: rgb(245, 236, 245);
+    background-color: var(--light-color1);
 }
 a {
     text-decoration: none;
-    color: white;
+    color: var(--white-color);
 }
 ul {
     list-style: none;
@@ -21,8 +31,8 @@ ul {
 h1 {
     font-size: 60px;
     font-weight: bolder;
-    font-family: 'Tangerine', serif;
-    color: #371F76;
+    font-family: 'Tangerine', cursive;
+    color: var(--dark-color);
     margin-bottom: 10px;
     margin-top: 15px;
 }
@@ -30,8 +40,8 @@ h4{
     width: 100%;
     font-size: 26px;
     font-weight: bold;
-    background-color: #f6e4ff;
-    color: rgb(94,85,94);
+    background-color: var(--light-color1);
+    color: var(--color3);
     }
 h5{
     width: 100%;
@@ -136,7 +146,7 @@ header::before {
 .portada {
     max-width: 100%;
     height: 100vh;
-    background-color: #f6e4ff;
+    background-color: var(--light-color1);
 }
 .portada__fondo {
     max-width: 1200px;
@@ -164,15 +174,16 @@ header::before {
 .portada__fondo-contador .texto1 {
     font-size: 22px;
     text-align: center;
-    color: rgb(94,85,94);
-    background-color: #f6e4ff;
+    color: var(--color3);
+    background-color: var(--light-color1);
     margin: 10px 0;
 }
 .portada__fondo-contador .texto2 {
     font-size: 22px;
     text-align: center;
-    color: whitesmoke;
-    background-color: #371F76;
+    color: var(--black);
+    font-weight: bold;
+    background-color: var(--color1);
     margin-bottom: 10px;
 }
 
@@ -195,7 +206,7 @@ audio {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #ceabce;
+    background-color: var(--white-color);
 }
 .seccion1__foto {
     width: 250px;
@@ -510,9 +521,12 @@ button a {
     }
     .portada__fondo-contador .texto1 {
         font-size: 20px;
+        line-height: .8;
+        margin: 5px;
     }
     .portada__fondo-contador .texto2 {
         font-size: 20px;
+        margin-bottom: 5;
     }
     audio {
         width: 200px;
@@ -524,6 +538,7 @@ button a {
     .seccion1 {
         background-size: 200%;
         background-position: center;
+        background-image: url(./assets/marcoFlores.png);
     }
     .seccion1__foto {
         width: 200px;
@@ -544,6 +559,9 @@ button a {
     }     
 
     /* SECCION 2*/
+    .seccion2 {
+        background-image: url(./assets/fondoFloresA.png);
+    }
     .contenedor__imagen-seccion2{
         width: 260px;
         height: auto;
@@ -560,7 +578,7 @@ button a {
         margin-bottom: 0;
     } 
     h1 {
-        font-family: cursive;
+        font-family: 'Tangerine', cursive;
         font-size: 38px;
         font-weight: bold;
         margin: 5px 0;
