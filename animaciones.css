@@ -202,34 +202,3 @@
 
 /* ANIMACIONES */
 
-.animate__rotateIn {
-    view-timeline-name: --image;
-    view-timeline-axis: block;
-    animation-timeline: --image;
-    animation-range: entry 25% cover 50%;
-    animation-iteration-count: 2;
-}
-.animate__backInRight {
-    view-timeline-name: --font;
-    view-timeline-axis: block;
-    animation-timeline: --font;
-    animation-range: entry 25% cover 50%;
-}
-.animate__backInLeft{
-    view-timeline-name: --font;
-    view-timeline-axis: block;
-    animation-timeline: --font;
-    animation-range: entry 25% cover 50%;
-}
-.animate__lightSpeedInLeft {
-    view-timeline-name: --font;
-    view-timeline-axis: block;
-    animation-timeline: --font;
-    animation-range: entry 25% cover 50%;
-}
-.animate__jackInTheBox {
-    view-timeline-name: --font;
-    view-timeline-axis: block;
-    animation-timeline: --font;
-    animation-range: entry 25% cover 50%;
-}

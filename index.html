@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jessie&Sebastián</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="breakpoints.css">
-    <link rel="stylesheet" href="animaciones.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&Tangerine:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="./assets/favicon.png"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="breakpoints.css">
+    <link rel="stylesheet" href="animaciones.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -43,7 +43,7 @@
 
     <div class="portada" id="home">
         <div class="portada__fondo">
-            <div class="portada__fondo-contador animate__animated animate__backInUp">
+            <div class="portada__fondo-contador" data-aos="fade-up" data-aos-duration="3000">
                 <img src="./assets/J&S.png" alt="jessie&sebas">
                 <p class="texto1">¡Nos casamos! Será un honor contar con tu presencia en este día tan especial.</p>
                 <p class="texto2">F A L T A N</p>
@@ -73,10 +73,10 @@
     </div> 
 
     <div class="seccion1" id="calendario">
-        <img class="seccion1__foto animate__animated animate__rotateIn" src="./assets/compromiso.jpg">
-        <p class="texto3 animate__animated animate__backInLeft">Sábado</p>
-        <p class="texto4 animate__animated animate__backInRight">4 de Noviembre de 2023</p>
-        <P class="texto5 animate__animated animate__backInLeft">A las 11hrs</P>
+        <img class="seccion1__foto" data-aos="flip-left" data-aos-easing="linear" data-aos-duration="3000" src="./assets/compromiso.jpg">
+        <p class="texto3" data-aos="fade-right" data-aos-duration="3000">Sábado</p>
+        <p class="texto4" data-aos="fade-left" data-aos-duration="3000">4 de Noviembre de 2023</p>
+        <P class="texto5" data-aos="fade-right" data-aos-duration="3000">A las 11hrs</P>
         <button>
             <a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=MXIxaG80ZjMwNGsxamdyM3ZwMW5zbjRoNHAgbmVsbHkuYWxlLmJnQG0&amp;tmsrc=nelly.ale.bg%40gmail.com">
                 <img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_es-419.gif">
@@ -85,9 +85,9 @@
     </div>
 
     <div class="seccion2" id="donde">
-        <h1 class="animate__animated animate__lightSpeedInLeft">¿Dónde y Cuándo?</h1>
+        <h1 data-aos="zoom-in" data-aos-duration="3000">¿Dónde y Cuándo?</h1>
         <div class="seccion2__contenedores">
-            <div class="seccion2--izquierda">
+            <div class="seccion2--izquierda" data-aos="fade-up-right" data-aos-duration="3000">
                 <div class="contenedor__imagen-seccion2">
                     <img src="./assets/iglesia.jpg" alt="iglesia">
                 </div>
@@ -98,7 +98,7 @@
                     <a class="text--black" href="https://goo.gl/maps/ovx6X8A9UP7AUXN48" target="_blank">UBICACIÓN</a>
                 </button>
             </div>
-            <div class="seccion2--derecha">
+            <div class="seccion2--derecha" data-aos="fade-up-left" data-aos-duration="3000">
                 <div class="contenedor__imagen-seccion2">
                     <img src="./assets/finca.jpg" alt="finca">
                 </div>
@@ -114,15 +114,15 @@
 
     <div class="seccion3" id="indicaciones">
         <div class="seccion3__contenedor">
-            <div class="seccion3--izquierda">
+            <div class="seccion3--izquierda" data-aos="fade-right" data-aos-duration="3000">
                 <img src="./assets/brideGroom.webp" alt="fotoNovios">
-                <h1 class="animate__animated animate__lightSpeedInLeft">Indicaciones para el evento</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="3000">Indicaciones para el evento</h1>
                 <h5>Código de Vestimenta</h5>
                 <h4>Los colores blanco y lila se reservan para los novios.</h4>
                 <h4>Vestimenta formal.</h4>
             </div>
-            <div class="seccion3--derecha">
-                <h1 class="animate__animated animate__lightSpeedInLeft">Regalo de Bodas</h1>
+            <div class="seccion3--derecha" data-aos="fade-left" data-aos-duration="3000">
+                <h1 data-aos="zoom-in" data-aos-duration="3000">Regalo de Bodas</h1>
                 <h4>Su presencia en nuestra boda será el mejor regalo. Pero si desean darnos otro obsequio, les agradeceremos cualquier apoyo en efectivo que nos quieran brindar.</h4>
                 <img src="./assets/envelope.jpg" alt="fotoSobre">
             </div> 
@@ -130,22 +130,22 @@
     </div>
 
     <div class="seccion4" id="asistencia">
-        <h1 class="animate__animated animate__lightSpeedInLeft">Con la bendición de Dios y de nuestros padres:</h1>
+        <h1 data-aos="zoom-in" data-aos-duration="3000">Con la bendición de Dios y de nuestros padres:</h1>
         <div class="seccion4__padres">
-            <div class="padres">
+            <div class="padres" data-aos="fade-right" data-aos-duration="3000">
                 <img src="./assets/bride.png" alt="novia">
                 <h4>Guadalupe Margarita González Servín</h4>
                 <h4>Cesáreo Isaías Bautista González ✞</h4>
                 <h5>Gracias a mi papá que desde el cielo nos acompaña.</h5>
             </div>
-            <div class="padres">
+            <div class="padres" data-aos="fade-left" data-aos-duration="3000">
                 <img src="./assets/groom.png" alt="novio">
                 <h4>Martha Rocío Ayala Ramírez</h4>
                 <h4>Rubén Darío Herrera Ruiz</h4>
             </div>
         </div>
         <div class="whats">
-            <p class="h7">Te agradecemos que confirmes tu asistencia lo más pronto posible.</p>
+            <p class="h7" data-aos="fade-up" data-aos-duration="3000">Te agradecemos que confirmes tu asistencia lo más pronto posible.</p>
             <p style="font-size: 24px; color=#171717;">Para hacerlo da click en el siguiente enlace.</p>
             <button class="boton__2">
                 <a target="_blank" href="
@@ -221,7 +221,7 @@
                     <span class="fa-solid fa-greater-than"></span>
                 </div>
             </article>
-            <h1 class="animate__animated animate__jackInTheBox">¡Gracias por acompañarnos!</h1>
+            <h1 data-aos="zoom-in" data-aos-duration="3000">¡Gracias por acompañarnos!</h1>
         </div>
     </div>
 
@@ -244,12 +244,15 @@
              ? 'fa-solid fa-xmark'
              : 'fa-solid fa-bars'
         }
-
     </script>
 
     <script src="contador.js"></script> 
     <script src="carrusel.js"></script>
     <script src="scroll.js"></script>
-    <script src="https://kit.fontawesome.com/caec77cea8.js" crossorigin="anonymous"></script> 
+    <script src="https://kit.fontawesome.com/caec77cea8.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script> 
 </body>
 </html>

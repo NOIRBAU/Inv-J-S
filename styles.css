@@ -292,14 +292,12 @@ audio {
     margin: 0 auto;
     border-radius: 15px;
     margin-bottom: 10px;
-    filter: grayscale(1);
     transition: 0.5s;
     object-fit: cover;
 }
 .seccion2 img:hover {
     transform: scale(1.2);
     border-radius: 15px;
-    filter: grayscale(0);
 }
 .boton__2 {
     width: 140px;
@@ -489,6 +487,7 @@ button a {
     /* NAVBAR */
     .navbar ul {
         display: none;
+        position:fixed;
     }
     .navbar .icono__menu {
         display: block;
