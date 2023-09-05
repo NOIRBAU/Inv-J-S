@@ -481,16 +481,6 @@ audio::-webkit-media-controls-play-button,
     font-size: 30px;
     color: var(--color3);
 }
-.seccion1 button {
-    background-color: var(--color2);
-    margin-top: 15px;
-    border-radius: 10px;
-    font-size: x-large;
-    color: var(--black);
-    border-color: var(--color3);
-    padding: 2px 5px;
-    font-weight: normal;
-}
 
 /* SECCION2: LUGAR Y FECHA */
 .seccion2 {
