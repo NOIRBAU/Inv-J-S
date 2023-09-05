@@ -105,6 +105,9 @@ header::before {
     gap: 2rem;
     margin-right: 15px;
 }
+.navbar a {
+    font-size: 22px;
+}
 .icono__menu {
     display: none;
 }
@@ -123,7 +126,7 @@ header::before {
     overflow: hidden;
 }
 .menu__lateral.abierto{
-    height: 270px;
+    height: 250px;
 }
 .menu__lateral ul {
     padding: 0.7rem;
@@ -139,6 +142,7 @@ header::before {
 }
 .menu__lateral ul a {
     color: var(--white-color);
+    font-size: 20px;
 }
 .icono {
     width: 70%;
@@ -423,7 +427,7 @@ audio::-webkit-media-controls-play-button,
     width: 60px;
 }
 .timeline-content{
-    background: rgb(0, 0, 0, .1);
+    background: rgb(255, 255, 255, .2);
     backdrop-filter: blur(7.1px);
     -webkit-backdrop-filter: blur(7.1px);
 	padding: 10px;
@@ -693,6 +697,10 @@ button a {
     border-radius: 15px;
     overflow: hidden;
 }
+.contenedor__redes p{
+    font-weight: bold;
+    color: #371F76;
+}
 .contenedor__logoInsta {
     display: flex;
     flex-direction: row;
@@ -710,7 +718,6 @@ button a {
     width: 60px;
     margin-right: 10px;
 }
-
 
 /* SECCION5: AGRADECIMIENTOS */
 .seccion5 {
@@ -999,6 +1006,10 @@ button a {
     }
 
     /* REDES SOCIALES */
+    .redesSociales {
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
     .contenedor__redes {
         line-height: .9;
         width: 90%;
