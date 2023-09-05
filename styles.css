@@ -621,6 +621,7 @@ audio::-webkit-media-controls-play-button,
 }
 .seccion3--derecha h4 {
     font-size: 20px;
+    margin: 10px auto;
 }
 .seccion3--derecha img {
     width: 300px;
