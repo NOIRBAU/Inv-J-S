@@ -20,7 +20,7 @@
 #micontador .num{
     display: flex;
     flex-direction:column;
-    border: 2px solid var(--color1a);
+    border: 1px solid var(--color1a);
     margin: 0 8px;
 }
 #micontador .num .dig{
@@ -28,14 +28,13 @@
     padding: 10px;
 }
 #micontador .num .dig span{
-    font-family: "Arial Black";
     font-size: 2rem;
     font-weight: 800px;
     position: relative;
 }
 #micontador .label{
     text-align: center;
-    border-top: 2px solid var(--color1a);
+    border-top: 1px solid var(--color1a);
 }
 
 /* CARRUSEL */

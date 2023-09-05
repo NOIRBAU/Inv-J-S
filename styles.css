@@ -24,13 +24,15 @@ a {
     text-decoration: none;
     color: var(--white-color);
 }
+p {
+    font-weight: normal;
+}
 ul {
     list-style: none;
     font-size: x-large;
 }
 h1 {
     font-size: 60px;
-    font-weight: bolder;
     font-family: 'Tangerine', cursive;
     color: var(--dark-color);
     margin-bottom: 10px;
@@ -39,23 +41,23 @@ h1 {
 h4{
     width: 100%;
     font-size: 26px;
-    font-weight: bold;
     background-color: var(--light-color1);
     color: var(--color3);
+    font-weight: normal;
     }
 h5{
     width: 100%;
     font-size: 20px;
-    font-weight: bolder;
     background-color: var(--light-color1);
     color: var(--dark-color);
+    font-weight: normal;
 }
 h6{
     width: 100%;
     font-size: 20px;
-    font-weight: bold;
     color:var(--black);
     background-color: var(--light-color1);
+    font-weight: normal;
 }
 .h7{
     font-size: 22px;
@@ -93,8 +95,8 @@ header::before {
     margin: 0 auto;
 }
 .navbar .logo img {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     margin-left: 10px;
 }
 .navbar ul {
@@ -121,7 +123,7 @@ header::before {
     overflow: hidden;
 }
 .menu__lateral.abierto{
-    height: 200px;
+    height: 270px;
 }
 .menu__lateral ul {
     padding: 0.7rem;
@@ -130,13 +132,13 @@ header::before {
     text-align: center;
     justify-content: center;
     list-style: none;
+    margin: auto 0;
 }
 .menu__lateral li {
     margin: 5px 0;
 }
 .menu__lateral ul a {
-    color: white;
-    font-weight: bolder;
+    color: var(--white-color);
 }
 .icono {
     width: 70%;
@@ -194,6 +196,10 @@ audio {
     margin-top: 10px;
     height: 35px;
 }
+audio::-webkit-media-controls-play-button,
+     audio::-webkit-media-controls-panel {
+     background-color: var(--light-color1);
+}
 
 /* NUESTRA HISTORIA */
 .nuestraHistoria {
@@ -231,7 +237,6 @@ audio {
 .historiaRelato h4 {
     margin-bottom: 20px;
     text-align: center;
-    line-height: .8;
     font-weight: normal;
     padding: 10px;
 }
@@ -254,11 +259,9 @@ audio {
     margin: auto auto;
     overflow: hidden;
     text-align: center;
+    border-radius: 15px;
     background-color: var(--white-color);
     background-image: url(./assets/fondoFLoresM.png);
-    background-position: center;
-    background-size: cover;
-    border-radius: 15px;
 }
 .contenedorVotos img {
     width: 200px;
@@ -290,19 +293,19 @@ audio {
     display: flex;
     justify-content: center;
     align-content: center;
-    background-color: none;
+    background-color: var(--light-color1);
 }
 .contenedor__seccionPadres{
-    max-width: 1200px;
+    width: 1200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: auto auto;
     overflow: hidden;
     text-align: center;
 }
 .contenedor__padres {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -310,7 +313,6 @@ audio {
     flex-wrap: wrap;
 }
 .padres {
-    max-width: 1200px;
     text-align: center;
     line-height: .9;
     display: flex;
@@ -321,20 +323,24 @@ audio {
     width: 48%;
     background-image: url(./assets/fondoClaro.png);
     border-radius: 15px;
+    padding: 15px 0;
 }
 .padres--der {
     width: 48%;
     background-image: url(./assets/fondoClaro.png);
     border-radius: 15px;
+    padding: 15px 0;
 }
 .padres h4 {
     font-size: 24px;
     text-align: center;
     margin-bottom: 5px;
+    font-weight: normal;
 }
 .padres h5 {
-    font-size: 20px;
+    font-size: 22px;
     margin-top: 10px;
+    font-weight: normal;
 }
 .logo-padres {
     width: 62px;
@@ -346,7 +352,7 @@ audio {
     margin-bottom: 10px;
 }
 
-/* SECCION: ITINERARIO */
+/* ITINERARIO */
 .seccion__itinerario {
     width: 100%;
     display: flex;
@@ -361,6 +367,8 @@ audio {
     justify-content: center;
     align-items: center;
     margin-top: 100px;
+    border-radius: 15px;
+    margin-bottom: 40px;
 }
 .timeline-section{
 	min-height: 100vh;
@@ -409,12 +417,13 @@ audio {
 	font-size: 26px;
 	color: var(--black);
 	margin:6px 0 15px;
+    font-weight: normal;
 }
 .timeline-content img{
     width: 60px;
 }
 .timeline-content{
-    background: rgba(255, 255, 255, 0.22);
+    background: rgb(0, 0, 0, .1);
     backdrop-filter: blur(7.1px);
     -webkit-backdrop-filter: blur(7.1px);
 	padding: 10px;
@@ -423,13 +432,11 @@ audio {
 .timeline-content h3{
     font-size: 20px;
 	color: var(--dark-color);
-	margin:0 0 10px;
-	font-weight: bolder;
+    font-weight: normal;
 }
 .timeline-content p{
     color: var(--color3);
 	font-size: 18px;
-	font-weight: bold;
 	line-height: 22px;
 }
 
@@ -468,13 +475,11 @@ audio {
 }
 .texto4{
     font-size: 60px;
-    font-weight: bold;
     font-family: 'Tangerine', serif;
     color: var(--dark-color);
 }
 .texto5 {
     font-size: 30px;
-    font-weight: bold;
     color: var(--color3);
 }
 .seccion1 button {
@@ -485,6 +490,7 @@ audio {
     color: var(--black);
     border-color: var(--color3);
     padding: 2px 5px;
+    font-weight: normal;
 }
 
 /* SECCION2: LUGAR Y FECHA */
@@ -495,7 +501,7 @@ audio {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(./assets/fondoFlores.png);
+    background-image: url(./assets/fondoFloresM.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     overflow: hidden;
@@ -636,7 +642,7 @@ audio {
 .seccion4 {
     width: 100%;
     height: 100vh;
-    background-image: url(./assets/fondoFlores.png);
+    background-image: url(./assets/fondoFloresM.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -661,6 +667,7 @@ audio {
 }
 button a {
     color: var(--black);
+    font-weight: normal;
 }
 
 /* REDES SOCIALES */
@@ -680,7 +687,7 @@ button a {
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    margin: 0 auto;
+    margin: auto;
     text-align: center;
     background-color: var(--white-color);
     border-radius: 15px;
@@ -813,16 +820,13 @@ button a {
     }
     .texto3 {
         font-size: 34px;
-        font-weight: bold;
     }  
     .texto4 {
         font-size: 38px;
-        font-weight: bolder;
         text-align: center;
     }      
     .texto5 {
         font-size: 30px;
-        font-weight: bolder;
         color: var(--color3);
     }
 
@@ -924,7 +928,7 @@ button a {
 
     /* SECCION 2*/
     .seccion2 {
-        background-image: url(./assets/fondoFloresA.png);
+        background-image: url(./assets/fondoFloresMA.png);
     }
     .contenedor__imagen-seccion2{
         width: 260px;
@@ -984,7 +988,7 @@ button a {
     /* SECCION 4 */
     .seccion4 {
     line-height: 1;
-    background-image: url(./assets/fondoFloresA.png);
+    background-image: url(./assets/fondoFloresMA.png);
     background-size: cover;
     }
     .seccion4 h1 {
