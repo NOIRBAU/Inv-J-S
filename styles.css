@@ -477,9 +477,6 @@ audio::-webkit-media-controls-play-button,
     font-weight: normal;
     color: var(--color3);
 }
-.texto4{
-    font-size: 60px;
-}
 .texto5 {
     font-size: 30px;
     color: var(--color3);
@@ -813,11 +810,7 @@ button a {
     }
     .texto3 {
         font-size: 34px;
-    }  
-    .texto4 {
-        font-size: 38px;
-        text-align: center;
-    }      
+    }     
     .texto5 {
         font-size: 30px;
         color: var(--color3);
