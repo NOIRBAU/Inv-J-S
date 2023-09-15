@@ -404,13 +404,10 @@
         AOS.init();
     </script>
     <script>
-        var myAudio = document.querySelector('audio');
-        myAudio.addEventListener('canplay', function() {
-            myAudio.play();
-        });
-        
-        myAudio.load();
+    var myAudio = document.querySelector('audio');
+    window.addEventListener('touchstart', function audioStart() {
         myAudio.play();
+        this.removeEventListener('touchstart', audioStart);
     });
     </script> 
 </body>
