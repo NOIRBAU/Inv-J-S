@@ -67,7 +67,7 @@
                        <div class="label">SEG</div>
                     </div>
                  </div>
-                 <audio autoplay controls>
+                 <audio id="audio" autoplay preload="auto" controls>
                     <source src="./assets/song.mp3" type="audio/mp3">
                  </audio> 
             </div>
@@ -78,9 +78,9 @@
         <img class="seccion1__foto" data-aos="flip-left" data-aos-easing="linear" data-aos-duration="3000" src="./assets/compromiso.jpg">
         <p class="texto3" data-aos="fade-right" data-aos-duration="2000">Sábado</p>
         <h1 data-aos="zoom-in" data-aos-duration="3000">4 de Noviembre de 2023</h1>
-        <P class="texto5" data-aos="fade-right" data-aos-duration="2000">A las 11hrs</P>
+        <P class="texto5" data-aos="fade-right" data-aos-duration="2000">A las 15:30 hrs.</P>
         <button class="boton__2" data-aos="zoom-in-up" data-aos-duration="2000">
-            <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MXRtNTBoa3Y4dWFzb282cWt1YzRuZDY0cW4gMDQ4ODVjNzUyMzQxODdkNjkyZjRlMGZiYmNjMjZhZGY0MjhjODM0ZmNiZDcxOTI1NjMxYjdjMjgwZDA0NWUwYkBn&tmsrc=04885c75234187d692f4e0fbbcc26adf428c834fcbd71925631b7c280d045e0b%40group.calendar.google.com" target="_blank">AGENDAR</a>
+            <a href="http://evt.to/adihmaiew" target="_blank">AGENDAR</a>
         </button>
     </div>
 
@@ -126,7 +126,7 @@
                 </div>
                 <div class="padres padres--der" data-aos="fade-left" data-aos-duration="2000">
                     <img class="logo-padres" src="./assets/groom.png" alt="novio">
-                    <img class="foto-padres" src="./assets/papas2.jpg">
+                    <img class="foto-padres" src="./assets/papas2.jpeg">
                     <h4>Martha Rocío Ayala Ramírez</h4>
                     <h4>Rubén Darío Herrera Ruiz</h4>
                 </div>
@@ -234,7 +234,7 @@
                 </div>
                 <h4>Iglesia San Felipe Apóstol</h4>
                 <h5>Cra. 7 #7b15, Funza, Cundinamarca.</h5>
-                <h6>A las 12:00hrs.</h6>
+                <h6>A las 15:30 hrs.</h6>
                 <button class="boton__2" data-aos="zoom-in-up" data-aos-duration="2000">
                     <a class="text--black" href="https://goo.gl/maps/ovx6X8A9UP7AUXN48" target="_blank">UBICACIÓN</a>
                 </button>
@@ -245,7 +245,7 @@
                 </div>
                 <h4>Finca Antillana - El Coral</h4>
                 <h5>Cl. 15 #25-51, Funza, Cundinamarca.</h5>
-                <h6>A las 14:00hrs.</h6>
+                <h6>A las 18:00 hrs.</h6>
                 <button class="boton__2" data-aos="zoom-in-up" data-aos-duration="2000">
                     <a class="text--black" href="https://goo.gl/maps/BGEyLgvMEF9n51Jo7" target="_blank">UBICACIÓN</a>
                 </button>
@@ -395,7 +395,6 @@
              : 'fa-solid fa-bars'
         }
     </script>
-
     <script src="contador.js"></script> 
     <script src="carrusel.js"></script>
     <script src="scroll.js"></script>
@@ -403,6 +402,13 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-      </script> 
+    </script>
+    <script>
+    var myAudio = document.querySelector('audio');
+    window.addEventListener('touchstart', function audioStart() {
+        myAudio.play();
+        this.removeEventListener('touchstart', audioStart);
+    });
+    </script> 
 </body>
 </html>

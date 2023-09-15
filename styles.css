@@ -218,6 +218,7 @@ audio::-webkit-media-controls-play-button,
     object-fit: cover;
     background-repeat: no-repeat;
     background-position: center;
+    overflow: hidden;
 }
 .contenedorHistoria {
     max-width: 1200px;
