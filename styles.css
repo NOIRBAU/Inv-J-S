@@ -98,6 +98,7 @@ header::before {
     width: 70px;
     height: 70px;
     margin-left: 10px;
+    margin-top: 5px;
 }
 .navbar ul {
     list-style: none;
@@ -152,7 +153,7 @@ header::before {
 .portada {
     max-width: 100%;
     height: 100vh;
-    background-color: var(--light-color1);
+    background-color: var(--color1);
     overflow: hidden;
 }
 .portada__fondo {
@@ -249,10 +250,10 @@ audio::-webkit-media-controls-play-button,
 
 /* VOTOS MATRIMONIALES */
 .votosMatrimoniales {
-    display: none;
+    /*display: none;*/
     width: 100%;
     height: 100vh;
-    /*display: flex;*/
+    display: flex;
     justify-content: center;
     align-content: center;
     background-color: var(--color1);
@@ -270,11 +271,11 @@ audio::-webkit-media-controls-play-button,
     background-color: var(--white-color);
     background-image: url(./assets/fondoFLoresM.png);
 }
-.contenedorVotos img {
+/*.contenedorVotos img {
     width: 200px;
     height: 200px;
     margin: 20px 0;
-}
+}*/
 .votos {
     width: 100%;
     display: flex;
@@ -291,6 +292,32 @@ audio::-webkit-media-controls-play-button,
 .votos__imagen {
     width: 45%;
     border-radius: 15px;
+}
+.votos__slider {
+    width: 230px;
+    height: 230px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.votos__slider ul {
+    display: flex;
+    animation: cambio 10s infinite;
+    alternate linear;
+    width: 200%;
+}
+.votos__slider li {
+    width: 100%;
+    list-style: none;
+}
+.votos__slider img {
+    width: 230px;
+    height: 230px;
+}
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+    50%{margin-left: -100%;}
+    70%{margin-left: -100%;}
 }
 
 /* PADRES */
@@ -460,7 +487,7 @@ audio::-webkit-media-controls-play-button,
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--color1);
+    background-color: var(--light-color1);
     overflow: hidden;
 }
 .seccion1__foto {
@@ -748,7 +775,7 @@ button a {
     }
     .navbar .icono__menu {
         display: block;
-        margin-right: 10px;
+        margin-right: 20px;
         font-size: 30px;
     }
     .menu__lateral {
@@ -796,7 +823,7 @@ button a {
         background-size: 200%;
         background-position: center;
         background-image: url(./assets/marcoFlores.png);
-        background-color: var(--color1);
+        /*background-color: var(--color1);*/
     }
     .seccion1__foto {
         width: 200px;
@@ -849,9 +876,6 @@ button a {
     }
     .votos h4 {
         font-size: 20px;
-    }
-    .votos img {
-        margin: 10px;
     }
     .votos__imagen {
         width: 100%;
