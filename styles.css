@@ -423,6 +423,10 @@ audio::-webkit-media-controls-play-button,
 	background-color: var(--white-color);
 	left: calc(50% - 1px);
 }
+.timeline-items-color{
+    background-color: #371F76;
+    width: 100%;
+}
 .timeline-item{
 	margin-bottom: 40px;
 	width: 100%;

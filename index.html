@@ -232,7 +232,7 @@
                 <img src="./assets/brideGroom.webp" alt="fotoNovios">
                 <h1 data-aos="zoom-in" data-aos-duration="3000">Indicaciones para el evento</h1>
                 <h5>Código de Vestimenta</h5>
-                <h4>Los colores blanco y lila se reservan para los novios.</h4>
+                <h4>Los colores blanco, lila y azul cobalto se reservan para los novios.</h4>
                 <h4>Vestimenta formal.</h4>
             </div>
             <div class="seccion3--derecha" data-aos="fade-left" data-aos-duration="3000">
@@ -367,6 +367,19 @@
              ? 'fa-solid fa-xmark'
              : 'fa-solid fa-bars'
         }
+    </script>
+    <script>
+        jQuery(function($){
+            var $timeline = $('.timeline-items::before');
+            $(window).scroll(function(event){
+                var $current = $(this).scrollTop();
+                if( $current > 0){
+                    $timeline.addClass('.timeline-items-color');
+                } else{
+                    $timeline.removeClass('.timeline-items-color');
+                }
+            })
+        })
     </script>
     <script src="contador.js"></script> 
     <script src="carrusel.js"></script>
