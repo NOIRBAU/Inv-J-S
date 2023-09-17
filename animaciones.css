@@ -27,6 +27,7 @@
 #micontador .num .dig{
     overflow: hidden;
     padding: 10px;
+    width: 55px;
 }
 #micontador .num .dig span{
     font-size: 2rem;
@@ -154,10 +155,12 @@
     #micontador .num{
         background-color: rgba(244, 234, 244, .4);
         color: var(--black);
+        width: 40px;
     }
     #micontador .num .dig span{
         font-size: 20px;
-        padding: 3px;
+        padding: 0 4px;
+        text-align: center;
     }
     #micontador .num .dig{
         padding: 5px;

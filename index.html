@@ -67,7 +67,7 @@
                        <div class="label">SEG</div>
                     </div>
                  </div>
-                 <audio id="audio" autoplay preload="auto" controls>
+                 <audio id="audio" autobuffer autoplay preload="auto" controls>
                     <source src="./assets/song.mp3" type="audio/mp3">
                  </audio> 
             </div>
@@ -348,6 +348,34 @@
         </div>
     </div>
 
+    <div class="formulario">
+        <div class="cont__formulario">
+            <h1 id="">Buenos deseos</h1>
+            <div class="contact" id="contact">
+                <form action="https://formsubmit.co/nelly.bautist@gmail.com" method="POST" class="form" id="form" autocomplete="off">
+                    <div class="input-box fullName">
+                        <input name="fullName" id="fullName" type="text" placeholder="Tu nombre completo" class="input__element" required>
+                        <p class="messageError"></p>
+                    </div>
+                    <div class="input-box email">
+                        <input name="email" id="email" type="email" placeholder="Correo electrónico" class="input__element">
+                        <p class="messageError"></p>
+                    </div>
+                    <div class="input-box subject">
+                    <div class="input-box message">
+                        <textarea  name="message" id="message" cols="30" rows="10" placeholder="Escribe tus buenos deseos" maxLength = "200" class="input__box textarea__element"></textarea>
+                        <p class="messageError"></p>
+                    </div>               
+                    <input type="submit" value="SEND" class="btn" ></input>
+                    <p class="messageChecked"></p>
+                    <input type="hidden" name="_next" value="https://noirbau.github.io/Inv-J-S/">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+            </div>  
+        </div>
+ 
+    </div>
+
     <div class="goTop__container">
         <div class="goTop__button">
             <img src="assets/chevron-up-solid.svg" alt="flechaBoton">
@@ -368,19 +396,6 @@
              : 'fa-solid fa-bars'
         }
     </script>
-    <script>
-        jQuery(function($){
-            var $timeline = $('.timeline-items::before');
-            $(window).scroll(function(event){
-                var $current = $(this).scrollTop();
-                if( $current > 0){
-                    $timeline.addClass('.timeline-items-color');
-                } else{
-                    $timeline.removeClass('.timeline-items-color');
-                }
-            })
-        })
-    </script>
     <script src="contador.js"></script> 
     <script src="carrusel.js"></script>
     <script src="scroll.js"></script>
@@ -389,5 +404,6 @@
     <script>
         AOS.init();
     </script>
+    
 </body>
 </html>

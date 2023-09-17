@@ -181,11 +181,12 @@ header::before {
     margin: 0 auto;
 }
 .portada__fondo-contador .texto1 {
-    font-size: 22px;
+    font-size: 21px;
     text-align: center;
     color: var(--color3);
     background-color: var(--light-color1);
     margin: 10px 0;
+    padding: 5px;
 }
 .portada__fondo-contador .texto2 {
     font-size: 22px;
@@ -422,10 +423,6 @@ audio::-webkit-media-controls-play-button,
 	height: 100%;
 	background-color: var(--white-color);
 	left: calc(50% - 1px);
-}
-.timeline-items-color{
-    background-color: #371F76;
-    width: 100%;
 }
 .timeline-item{
 	margin-bottom: 40px;
@@ -754,6 +751,44 @@ button a {
     background-color: var(--light-color1);
 }
 
+/* FORMULARIO */
+
+.formulario {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.cont__formulario {
+    max-width: 1200px;
+    text-align: center;
+}
+input {
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border-color: #ceabce;
+    font-size: large;
+    padding: 5px;
+    background-color: var(--white-color);
+    font-family: 'Crimson Text', serif;
+    font-weight: lighter;
+    border-width: thin;
+}
+textarea {
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border-color: #ceabce;
+    font-size:large;
+    padding: 5px;
+    background-color: var(--white-color);
+    font-family: 'Crimson Text', serif;
+    font-weight: lighter;
+}
+.btn {
+    width: 100px;
+    background-color: #ceabce;
+}
 
 
 
@@ -854,7 +889,7 @@ button a {
         overflow: hidden;
     }
     .historiaRelato img {
-        width: 100%;
+        width: 90%;
         gap: 0;
     }
     .historiaRelato h4 {
@@ -1014,6 +1049,9 @@ button a {
 
     /* SECCION 4 */
     .seccion4 {
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
     line-height: 1;
     background-image: url(./assets/fondoFloresMA.png);
     background-size: cover;
@@ -1027,7 +1065,8 @@ button a {
 
     /* REDES SOCIALES */
     .redesSociales {
-        padding-top: 10px;
+        height: auto;
+        padding-top: 30px;
         padding-bottom: 30px;
     }
     .contenedor__redes {
@@ -1054,14 +1093,30 @@ button a {
 
     /*SECCION 5*/
     .seccion5 {
+        height: auto;
         background-image: url(./assets/fondoFloresMA.png);
         background-size: cover;
-        padding-top: 0px;
+        padding-top: 20px; 
+        padding-bottom: 30px;
     }
     .seccion5 h1 {
         margin-top: 50px;
     }
+
+    /* FORMULARIO */
+
+    .cont__formulario {
+        width: 90%;
+        padding: 10px 0;
+    }
+    input {
+        width: 90vw;
+    }
+    textarea {
+        width: 90vw;
+    }
 }
+
 
 
 
