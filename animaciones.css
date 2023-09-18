@@ -42,7 +42,7 @@
 /* CARRUSEL */
 .contenedor__carrusel {
     width: 600px;
-    height: 430px;
+    height: 400px;
     display: flex;
     background-color: transparent;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, .66);
