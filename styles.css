@@ -1025,6 +1025,7 @@ button a {
     }
     .seccion3__contenedor h1{
         margin-bottom: 10px;
+        line-height: .85;
     }
 
     /* SECCION 4 */
